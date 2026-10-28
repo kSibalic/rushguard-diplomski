@@ -1,0 +1,70 @@
+# ------------------------------------------------------------------------------
+# Credentials — never commit
+# ------------------------------------------------------------------------------
+# Real values live here; the committed template is Secrets.example.swift.
+diplomski/Config/Secrets.swift
+*.env
+.env*
+*.p12
+*.p8
+*.cer
+*.mobileprovision
+*.provisionprofile
+GoogleService-Info.plist
+
+# ------------------------------------------------------------------------------
+# macOS
+# ------------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ------------------------------------------------------------------------------
+# Xcode — per-user state and build output
+# ------------------------------------------------------------------------------
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+build/
+DerivedData/
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode 13+ may write these; they are user-specific.
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# ------------------------------------------------------------------------------
+# Swift Package Manager
+# ------------------------------------------------------------------------------
+# Package.resolved inside xcshareddata IS committed, so every checkout resolves the
+# same dependency versions.
+.build/
+.swiftpm/
+Packages/
+
+# ------------------------------------------------------------------------------
+# Editors and tooling
+# ------------------------------------------------------------------------------
+.claude/
+.vscode/
+.idea/
+*.swp
+*~
+
+# ------------------------------------------------------------------------------
+# Local working notes — kept out of the published repository
+# ------------------------------------------------------------------------------
+PROJECT_STATE.md
+CODE_HANDOVER.md
+*.local.md
